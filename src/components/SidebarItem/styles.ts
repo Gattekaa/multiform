@@ -35,7 +35,8 @@ export const IconArea = styled.div<{ active: boolean; }>`
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: ${props => props.active ? '#25CD89' : '#494A7C'};
+    background-color: ${props => props.active ? '#25CD89' : 'transparent'};
+    border: 2px dashed ${props => props.active ? '#25CD89' : '#494A7C'};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,13 +55,13 @@ export const Point = styled.div<{ active: boolean; }>`
     border: 3px solid #494A7C;
     border-radius: 50%;
     margin-left: 30px;
-    margin-right: -6px;
-    background-color: ${props => props.active ? '#25CD89' : '#003356'};
-    box-shadow: 0px 0px 10px 1px ${props => props.active ? '#25CD89' : 0};
+    margin-right: -7px;
+    background-color: ${props => props.active ? '#25CD89' : 'transparent'};
+    box-shadow: 0px 0px 10px 1px ${props => props.active ? '#25CD89' : 'transparent'};
     transition: all ease-in 0.3s;
 
     &:hover {
-        background-color: ${props => props.active ? '#25CD89' : '#007991'};
+        background-color: ${props => props.active ? '#25CD89' : '#494A7C'};
     }
 
 

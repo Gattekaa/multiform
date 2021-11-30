@@ -1,9 +1,25 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-    background-color: #003356;
+    background-image: radial-gradient(#001356, #34073d, #ef745c );
+    background-size: 400% 400%;
+    animation: colors 15s ease infinite; 
     color: #FFFFFF;
     min-height: 100vh;
+
+
+    @keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 `;
 
 export const Area = styled.div`

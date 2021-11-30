@@ -35,7 +35,7 @@ export const Container = styled.div`
             outline: 0;
             font-size: 15px;
             outline: none;
-            background-color: #003356;
+            background-color: transparent;
             transition: all ease-in 0.1s;
         }
         input:focus {
@@ -54,7 +54,7 @@ export const Container = styled.div`
     }
 
     button {
-        background-color: #003356;
+        background-color: transparent;
         color: #FFF;
         font-size: 14px;
         font-weight: bold;
@@ -67,9 +67,13 @@ export const Container = styled.div`
 
         &:hover {
             background-color: #25CD89;
-            transition: all ease-out 0.2s;
-            box-shadow: 0px 0px 15px 2px #25CD89;
+            transition: all ease-in 0.2s;
+            box-shadow: 0px 0px 10px 2px #25CD89;
+        }
 
+        &:active {
+            transition: all ease-out 0.2s;
+            box-shadow: 0px 0px 20px 2px #25CD89;
         }
         
     }
