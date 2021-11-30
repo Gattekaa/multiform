@@ -37,6 +37,7 @@ export const IconArea = styled.div<{ active: boolean; }>`
     border-radius: 50%;
     background-color: ${props => props.active ? '#25CD89' : 'transparent'};
     border: 2px dashed ${props => props.active ? '#25CD89' : '#494A7C'};
+    box-shadow: 0px 0px 5px 1px ${props => props.active ? '#25CD89' : 'transparent'};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +45,7 @@ export const IconArea = styled.div<{ active: boolean; }>`
     &:hover {
         background-color: ${props => props.active ? '#25CD69' : '#494A6C'};
         transition: all ease-out 0.2s;
-        box-shadow: 0px 0px 15px 2px ${props => props.active ? '#25CD69' : '#494A6C'};
+        box-shadow: 0px 0px 10px 2px ${props => props.active ? '#25CD69' : '#494A6C'};
         transition: all ease-in 0.3s;
     }
 `;
